@@ -41,7 +41,7 @@ const useStyles = makeStyles({
         flexGrow: '1',
     },
     logo: {
-        // fontFamily: ''
+        fontFamily: 'popS',
         marginRight: '1rem',
     },
     logSpanoColor: {
@@ -54,6 +54,7 @@ const useStyles = makeStyles({
         },
     },
     tab: {
+        fontFamily: 'popS',
         border: 'none',
         margin: '0 1rem',
     },
@@ -63,11 +64,13 @@ const useStyles = makeStyles({
         },
     },
     signInButton: {
+        fontFamily: 'popS',
         marginRight: '1.5rem',
         border: 'none',
         color: '#005BFF',
     },
     loginButton: {
+        fontFamily: 'popS',
         backgroundColor: '#005BFF',
         color: '#fcfcfc',
     },
