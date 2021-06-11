@@ -33,6 +33,10 @@ const useStyles = makeStyles({
         margin: 'auto',
         display: 'flex',
         alignItems: 'center',
+
+        '@media(max-width: 600px)': {
+            width: '90%',
+        },
     },
     logoContainer: {
         display: 'flex',
