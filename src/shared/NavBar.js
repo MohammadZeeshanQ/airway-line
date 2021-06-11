@@ -1,25 +1,37 @@
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { AppBar, Toolbar, Typography, Button, SwipeableDrawer, List, ListItem, Divider } from '@material-ui/core'
+
+// Icons
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+import FlightIcon from '@material-ui/icons/Flight';
+import LocalShippingIcon from '@material-ui/icons/LocalShipping';
+import PlaylistAddCheckIcon from '@material-ui/icons/PlaylistAddCheck';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 
 const mobileButtonData = [
     {
         'name': 'Book',
-        'link': ''
+        'link': '',
+        'icon': <FlightIcon style={{ marginRight: '0.5rem', }} />
     },
     {
         'name': 'Manage',
-        'link': ''
+        'link': '',
+        'icon': <PlaylistAddCheckIcon style={{ marginRight: '0.5rem', }} />
     },
     {
         'name': 'Charter',
-        'link': ''
+        'link': '',
+        'icon': <FlightTakeoffIcon style={{ marginRight: '0.5rem', }} />
     },
     {
         'name': 'Cargo',
-        'link': ''
+        'link': '',
+        'icon': <LocalShippingIcon style={{ marginRight: '0.5rem', }} />
     },
 ];
 
@@ -47,6 +59,7 @@ const useStyles = makeStyles({
     logo: {
         fontFamily: 'popS',
         marginRight: '1rem',
+        letterSpacing: '2px',
     },
     logSpanoColor: {
         color: '#005BFF',
@@ -61,6 +74,7 @@ const useStyles = makeStyles({
         fontFamily: 'popS',
         border: 'none',
         margin: '0 1rem',
+        letterSpacing: '2px',
     },
     buttonContainer: {
         '@media(max-width: 1024px)': {
@@ -72,11 +86,13 @@ const useStyles = makeStyles({
         marginRight: '1.5rem',
         border: 'none',
         color: '#005BFF',
+        letterSpacing: '2px',
     },
     loginButton: {
         fontFamily: 'popS',
         backgroundColor: '#005BFF',
         color: '#fcfcfc',
+        letterSpacing: '2px',
     },
     mobileMenuContainer: {
         display: 'none',
@@ -153,7 +169,7 @@ export default function NavBar() {
                         {
                             mobileButtonData.map((item, index) =>
                                 <ListItem key={index} >
-                                    <Button className={classes.tab} variant='outlined'>
+                                    <Button className={classes.tab} variant='outlined' startIcon={item.icon} >
                                         {item.name}
                                     </Button>
                                 </ListItem>
@@ -164,14 +180,14 @@ export default function NavBar() {
                         <div className={classes.signInMargin}>
                             <Divider />
                             <ListItem className={classes.listItemBackground} >
-                                <Button className={classes.tab} variant='outlined'>
+                                <Button className={classes.tab} variant='outlined' startIcon={<PersonAddIcon style={{ marginRight: '0.5rem', }} />} >
                                     Sign Up
                                 </Button>
                             </ListItem>
                             <Divider />
 
                             <ListItem className={classes.listItemBackground}>
-                                <Button className={classes.tab} variant='outlined'>
+                                <Button className={classes.tab} variant='outlined' startIcon={<AccountCircleIcon style={{ marginRight: '0.5rem', }} />} >
                                     Login
                                 </Button>
                             </ListItem>
