@@ -2,17 +2,19 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Button } from '@material-ui/core'
 import PlaneImage from '../../assets/images/planeBackground.png'
-import { height } from '@material-ui/system';
+import WhietBg from '../../assets/images/whiteBackground.jpg'
 
 
 const useStyles = makeStyles({
     root: {
-
+        position: 'relative',
     },
     wrapper: {
+        position: 'relative',
         width: '80%',
         margin: 'auto',
         paddingTop: '10rem',
+        zIndex: '2',
 
         '@media(max-width: 600px)': {
             paddingTop: '6rem',
@@ -21,6 +23,15 @@ const useStyles = makeStyles({
         '@media(min-width: 601px) and (max-width: 1024px)': {
             paddingTop: '6rem',
         },
+    },
+    whiteBackground: {
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        zIndex: '1',
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
     },
     textContainer: {
         textAlign: 'center',
@@ -95,6 +106,7 @@ export default function Landing() {
                 </div>
 
             </div>
+            <img src={WhietBg} className={classes.whiteBackground} alt='White Plane Patern' />
         </div>
     )
 }
