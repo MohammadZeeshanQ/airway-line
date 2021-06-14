@@ -40,6 +40,7 @@ const useStyles = makeStyles({
     header: {
         fontFamily: 'popB',
         letterSpacing: '2px',
+        color: '#3c3c3c',
 
         '@media(max-width: 600px)': {
             fontSize: '3rem',
@@ -52,6 +53,7 @@ const useStyles = makeStyles({
         fontFamily: 'popR',
         margin: '1.5rem 0',
         letterSpacing: '1px',
+        color: '#3c3c3c',
 
         '@media(max-width: 600px)': {
             fontSize: '1.15rem',
