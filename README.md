@@ -1,3 +1,8 @@
+# Design Inspired By:
+
+Name: kurniamajid
+Link:https://dribbble.com/kurniamajid
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

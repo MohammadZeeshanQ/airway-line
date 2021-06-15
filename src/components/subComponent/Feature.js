@@ -62,7 +62,9 @@ const useStyles = makeStyles({
             margin: '2rem 0',
         },
         '@media(min-width: 601px) and (max-width: 1024px)': {
-
+            margin: '2rem 0',
+            display: 'block',
+            textAlign: 'center',
         },
     },
     messageHeaderWrapper: {
@@ -87,11 +89,13 @@ const useStyles = makeStyles({
             lineHeight: '140%',
         },
         '@media(min-width: 601px) and (max-width: 1024px)': {
-
+            fontSize: '2rem',
         },
     },
     messageDescriptionWrapper: {
-
+        '@media(min-width: 601px) and (max-width: 1024px)': {
+            margin: '1rem',
+        },
     },
     messageDescription: {
         fontFamily: 'popR',
@@ -105,11 +109,20 @@ const useStyles = makeStyles({
             fontSize: '1.3rem',
         },
         '@media(min-width: 601px) and (max-width: 1024px)': {
-
+            fontSize: '.9rem',
+            paddingLeft: '2rem',
         },
     },
     gridWrapper: {
         padding: '1.5rem',
+
+        '@media(max-width: 600px)': {
+            padding: '.5rem',
+            marginBottom: '1.5rem',
+        },
+        '@media(min-width: 601px) and (max-width: 1024px)': {
+            padding: '1rem',
+        },
     },
     gridNumberContainer: {
 
@@ -118,6 +131,15 @@ const useStyles = makeStyles({
         fontFamily: 'popS',
         margin: '1rem 0',
         color: '#808080',
+
+
+        '@media(max-width: 600px)': {
+            fontSize: '2.5rem',
+            margin: '0',
+        },
+        '@media(min-width: 601px) and (max-width: 1024px)': {
+            fontSize: '1.2rem',
+        },
     },
     gridImageContainer: {
 
@@ -126,15 +148,37 @@ const useStyles = makeStyles({
         height: '25rem',
         width: '100%',
         objectFit: 'cover',
+
+        '@media(max-width: 600px)': {
+            fontSize: '.7rem',
+        },
+        '@media(min-width: 601px) and (max-width: 1024px)': {
+            height: '15rem',
+        },
     },
     gridHeader: {
         fontFamily: 'popS',
         margin: '1.5rem 0',
         color: '#3c3c3c',
+
+        '@media(max-width: 600px)': {
+            fontSize: '2.5rem',
+        },
+        '@media(min-width: 601px) and (max-width: 1024px)': {
+            fontSize: '1.2rem',
+            margin: '1rem 0',
+        },
     },
     gridDescription: {
         fontFamily: 'popR',
         color: '#808080',
+
+        '@media(max-width: 600px)': {
+            fontSize: '1.2rem',
+        },
+        '@media(min-width: 601px) and (max-width: 1024px)': {
+            fontSize: '.75rem',
+        },
     },
 
 });

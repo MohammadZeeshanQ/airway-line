@@ -8,6 +8,10 @@ import WhietBg from '../../assets/images/whiteBackground.jpg'
 const useStyles = makeStyles({
     root: {
         position: 'relative',
+
+        '@media(max-width: 600px)': {
+            paddingBottom: '3rem',
+        },
     },
     wrapper: {
         position: 'relative',
@@ -32,6 +36,10 @@ const useStyles = makeStyles({
         width: '100%',
         height: '100%',
         objectFit: 'cover',
+
+        '@media(max-width: 600px)': {
+            borderRadius: '0 0 2.5rem 2.5rem',
+        },
     },
     textContainer: {
         textAlign: 'center',
@@ -77,7 +85,9 @@ const useStyles = makeStyles({
         },
     },
     imageContainer: {
-
+        '@media(max-width: 600px)': {
+            display: 'none',
+        },
     },
     image: {
         width: '100%',
